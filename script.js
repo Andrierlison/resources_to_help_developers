@@ -1,11 +1,39 @@
 const linksLangs = [
-  "https://go.dev/",
-  "https://www.php.net/",
-  "https://dart.dev/",
-  "https://www.python.org/",
-  "https://www.typescriptlang.org/",
-  "https://nodejs.org/en/",
-  "https://www.mysql.com/",
+  {
+    link: "https://go.dev/",
+    title: "GO Lang",
+    desc: "Crie software rápido, confiável e eficiente em escala, Go é uma linguagem de programação de código aberto suportada pelo Google, Fácil de aprender e começar, Simultaneidade integrada e uma biblioteca padrão robusta, Ecossistema crescente de parceiros, comunidades e ferramentas",
+  },
+  {
+    link: "https://www.php.net/",
+    title: "PHP",
+    desc: "Uma linguagem de script de uso geral popular que é especialmente adequada para desenvolvimento web. Rápido, flexível e pragmático, o PHP potencializa tudo, desde seu blog até os sites mais populares do mundo.",
+  },
+  {
+    link: "https://dart.dev/",
+    title: "Dart",
+    desc: "Dart é uma linguagem otimizada para o cliente para aplicativos rápidos em qualquer plataforma",
+  },
+  {
+    link: "https://www.python.org/",
+    title: "Python",
+    desc: "Python é uma linguagem de programação que permite trabalhar mais rapidamente e integrar seus sistemas com mais eficiência.",
+  },
+  {
+    link: "https://www.typescriptlang.org/",
+    title: "TypeScript",
+    desc: "TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.",
+  },
+  {
+    link: "https://nodejs.org/en/",
+    title: "Node JS",
+    desc: "Node.js é um runtime JavaScript construído no mecanismo JavaScript V8 do Chrome. Como um tempo de execução JavaScript assíncrono orientado a eventos, o Node.js foi projetado para criar aplicativos de back end escaláveis",
+  },
+  {
+    link: "https://www.mysql.com/",
+    title: "MySQL",
+    desc: "MySQL é o banco de dados de código aberto mais popular do mundo. Com seu desempenho, confiabilidade e facilidade de uso comprovados, o MySQL tornou-se a principal escolha de banco de dados para aplicativos baseados na Web, usados por propriedades da Web de alto perfil, incluindo Facebook, Twitter, YouTube, Yahoo! e muitos mais.",
+  },
 ];
 
 const linksFrameworks = [
@@ -102,7 +130,16 @@ function mountLinks(list) {
   let htmlData = "";
 
   for (const key in list) {
-    htmlData = `<a target="_blank" href="${list[key]}"><li>${list[key]}</li></a>${htmlData}`;
+    if (typeof list[key] == "object") {
+      htmlData = `<a target="_blank" href="${list[key].link}">
+                    <li>
+                      <h3>${list[key].title}</h3>
+                      <p>${list[key].desc}</p>
+                    </li>
+                  </a>${htmlData}`;
+    } else {
+      htmlData = `<a target="_blank" href="${list[key]}"><li>${list[key]}</li></a>${htmlData}`;
+    }
   }
 
   console.log(htmlData);
