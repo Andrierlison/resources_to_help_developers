@@ -14,6 +14,7 @@ const linksFrameworks = [
   "https://pt-br.reactjs.org/",
   "https://flutter.dev/docs",
   "https://nextjs.org/",
+  "https://getbootstrap.com/",
 ];
 
 const linksCourses = [
@@ -50,6 +51,12 @@ const linksJobs = [
   "https://www.fiverr.com/",
   "https://vanhack.com/",
   "https://www.linkedin.com/feed/",
+  "https://programathor.com.br/",
+  "https://www.linkedin.com/",
+  "https://www.getninjas.com.br/",
+  "https://www.freelancer.com/",
+  "https://www.upwork.com/freelance-jobs/",
+  "https://www.workana.com/pt",
 ];
 
 const links = [
@@ -110,3 +117,4 @@ document.getElementById("links-frameworks").innerHTML =
 document.getElementById("links-linux-distros").innerHTML =
   mountLinks(linksLinuxDistros);
 document.getElementById("links-libs").innerHTML = mountLinks(linksLibs);
+document.getElementById("links-jobs").innerHTML = mountLinks(linksJobs);
