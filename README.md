@@ -1,2 +1,3 @@
-# resources-to-help-developers
-Links to help programmers with their tasks
+# RESOURCES TO HELP DEVELOPERS
+
+## Links to help programmers with their tasks
