@@ -142,8 +142,6 @@ function mountLinks(list) {
     }
   }
 
-  console.log(htmlData);
-
   return htmlData;
 }
 
@@ -155,3 +153,30 @@ document.getElementById("links-linux-distros").innerHTML =
   mountLinks(linksLinuxDistros);
 document.getElementById("links-libs").innerHTML = mountLinks(linksLibs);
 document.getElementById("links-jobs").innerHTML = mountLinks(linksJobs);
+
+let isLightTheme = true;
+
+document.getElementById("btn-toggle-theme").innerHTML =
+  "<img src='./images/icons/dark_mode_black_24dp.svg' alt='toggle theme'  height='30' width='30' />";
+
+function toggleTheme() {
+  if (isLightTheme) {
+    document.getElementById("btn-toggle-theme").innerHTML =
+      "<img src='./images/icons/light_mode_black_24dp.svg' alt='toggle theme'  height='30' width='30' style='color: #f1f1f1;' />";
+
+    isLightTheme = false;
+
+    document.getElementById("body").style.color = "#f1f1f1";
+    document.getElementById("body").style.backgroundColor = "#333333";
+    document.getElementById("main").style.borderColor = "#f1f1f1";
+  } else {
+    document.getElementById("btn-toggle-theme").innerHTML =
+      "<img src='./images/icons/dark_mode_black_24dp.svg' alt='toggle theme'  height='30' width='30' />";
+
+    isLightTheme = true;
+
+    document.getElementById("body").style.color = "#333333";
+    document.getElementById("body").style.backgroundColor = "#f1f1f1";
+    document.getElementById("main").style.borderColor = "#333333";
+  }
+}
