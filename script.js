@@ -2,7 +2,7 @@ const linksLangs = [
   {
     link: "https://go.dev/",
     title: "GO Lang",
-    desc: "Crie software rápido, confiável e eficiente em escala, Go é uma linguagem de programação de código aberto suportada pelo Google, Fácil de aprender e começar, Simultaneidade integrada e uma biblioteca padrão robusta, Ecossistema crescente de parceiros, comunidades e ferramentas",
+    desc: "Crie software rápido, confiável e eficiente em escala, Go é uma linguagem de programação de código aberto suportada pelo Google, Fácil de aprender e começar, Simultaneidade integrada e uma biblioteca padrão robusta, Ecossistema crescente de parceiros, comunidades e ferramentas.",
   },
   {
     link: "https://www.php.net/",
@@ -12,7 +12,7 @@ const linksLangs = [
   {
     link: "https://dart.dev/",
     title: "Dart",
-    desc: "Dart é uma linguagem otimizada para o cliente para aplicativos rápidos em qualquer plataforma",
+    desc: "Dart é uma linguagem otimizada para o cliente para aplicativos rápidos em qualquer plataforma.",
   },
   {
     link: "https://www.python.org/",
@@ -27,7 +27,7 @@ const linksLangs = [
   {
     link: "https://nodejs.org/en/",
     title: "Node JS",
-    desc: "Node.js é um runtime JavaScript construído no mecanismo JavaScript V8 do Chrome. Como um tempo de execução JavaScript assíncrono orientado a eventos, o Node.js foi projetado para criar aplicativos de back end escaláveis",
+    desc: "Node.js é um runtime JavaScript construído no mecanismo JavaScript V8 do Chrome. Como um tempo de execução JavaScript assíncrono orientado a eventos, o Node.js foi projetado para criar aplicativos de back end escaláveis.",
   },
   {
     link: "https://www.mysql.com/",
@@ -46,10 +46,26 @@ const linksFrameworks = [
 ];
 
 const linksCourses = [
-  "https://www.w3schools.com/",
-  "https://developer.mozilla.org/",
-  "https://www.lingq.com/pt/learn/en/web/library",
-  "https://www.duolingo.com/learn",
+  {
+    link: "https://www.w3schools.com/",
+    title: "W3schools",
+    desc: "Aprenda a codificar com o maior site de desenvolvedores web do mundo.",
+  },
+  {
+    link: "https://developer.mozilla.org/",
+    title: "Developer Mozilla (MDN)",
+    desc: "Recursos para desenvolvedores, por desenvolvedores, documentando tecnologias da web, incluindo CSS, HTML e JavaScript, desde 2005.",
+  },
+  {
+    link: "https://www.lingq.com/pt/learn/en/web/library",
+    title: "Lingq",
+    desc: "Aprenda idiomas com conteúdo que você adora. A maneira rápida, divertida e eficaz de aprender.",
+  },
+  {
+    link: "https://www.duolingo.com/learn",
+    title: "Duolingo",
+    desc: "Aprender com o Duolingo é divertido, e pesquisas mostram que funciona! Com lições rápidas e pequenas, você ganhará pontos e desbloqueará novos níveis enquanto adquire habilidades de comunicação do mundo real.",
+  },
 ];
 
 const linksLibs = [
@@ -76,18 +92,43 @@ const linksLinuxDistros = [
 ];
 
 const linksJobs = [
-  "https://www.fiverr.com/",
+  {
+    link: "https://www.fiverr.com/",
+    title: "Fiverr",
+    desc: "Plataforma para oferecer serviços.",
+  },
+  {
+    link: "https://www.linkedin.com/",
+    title: "Linkedin",
+    desc: "A maior rede profissional do mundo com mais de 850 milhões de membros em mais de 200 países e territórios em todo o mundo.",
+  },
   {
     link: "https://vanhack.com/",
     title: "Vanhack",
-    desc: "Consiga o emprego dos seus sonhos, no exterior e remoto",
+    desc: "Consiga o emprego dos seus sonhos, no exterior e remoto.",
   },
-  "https://www.linkedin.com/feed/",
-  "https://programathor.com.br/",
-  "https://www.linkedin.com/",
-  "https://www.getninjas.com.br/",
-  "https://www.freelancer.com/",
-  "https://www.upwork.com/freelance-jobs/",
+  {
+    link: "https://programathor.com.br/",
+    title: "Programathor",
+    desc: "Tenha acesso a diversas oportunidades para desenvolvedores. Encontre a vaga para programador(a) Front-End, Back-End, Mobile ou Full Stack que você estava procurando.",
+  },
+  {
+    link: "https://www.getninjas.com.br/",
+    title: "Getninjas",
+    desc: "O GetNinjas é um aplicativo disponível para celulares Android e iOS que tem como objetivo conectar clientes a profissionais. São mais de 500 tipos de serviços que você pode contratar ou fornecer!.",
+  },
+
+  {
+    link: "https://www.freelancer.com/",
+    title: "Freelancer",
+    desc: "O maior mercado de freelancers e crowdsourcing do mundo.",
+  },
+
+  {
+    link: "https://www.upwork.com/freelance-jobs/",
+    title: "Upwork",
+    desc: "Encontre os melhores trabalhos freelance, navegue pelos trabalhos publicados no Upwork ou entre e crie um perfil gratuito para encontrar o trabalho que você gosta de fazer.",
+  },
   {
     link: "https://www.workana.com/pt",
     title: "Workana",
