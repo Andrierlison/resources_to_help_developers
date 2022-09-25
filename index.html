@@ -14,14 +14,17 @@
   </head>
 
   <body id="body">
-    <main id="main">
-      <h1>Recursos para programadores</h1>
-      <div onclick="toggleTheme()" id="btn-toggle-theme"></div>
-
+    <header id="header" class="container-base">
+      <nav id="header-nav">
+        <h1>Recursos para programadores</h1>
+        <div onclick="toggleTheme()" id="btn-toggle-theme"></div>
+      </nav>
       <h2>
-        Lista de plataformas com alguns recursos para ajudar desenvolvedores
+        Lista de plataformas com alguns recursos para ajudar desenvolvedores em
+        suas tarefas diárias.
       </h2>
-
+    </header>
+    <main id="main" class="container-base">
       <details>
         <summary>Empregos</summary>
         <ul id="links-jobs"></ul>
@@ -52,6 +55,14 @@
         <ul id="links-linux-distros"></ul>
       </details>
     </main>
+    <footer id="footer" class="container-base">
+      <h3>
+        Contribua em
+        <a href="https://github.com/Andrierlison/resources-to-help-developers"
+          >GITHUB</a
+        >
+      </h3>
+    </footer>
   </body>
 
   <script src="./script.js"></script>

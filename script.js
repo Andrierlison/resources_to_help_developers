@@ -172,19 +172,27 @@ function toggleTheme() {
     document.getElementById("btn-toggle-theme").innerHTML =
       "<img src='./images/icons/light_mode_black_24dp.svg' alt='toggle theme'  height='30' width='30' style='color: #f1f1f1;' />";
 
-    isLightTheme = false;
+    const darkClass = "container-dark container-base";
 
-    document.getElementById("body").style.color = "#f1f1f1";
-    document.getElementById("body").style.backgroundColor = "#333333";
-    document.getElementById("main").style.borderColor = "#f1f1f1";
+    document.getElementById("header").className = darkClass;
+    document.getElementById("main").className = darkClass;
+    document.getElementById("footer").className = darkClass;
+
+    document.getElementById("body").className = "dark-body";
+
+    isLightTheme = false;
   } else {
     document.getElementById("btn-toggle-theme").innerHTML =
       "<img src='./images/icons/dark_mode_black_24dp.svg' alt='toggle theme'  height='30' width='30' />";
 
-    isLightTheme = true;
+    const lightClass = "container-light container-base";
 
-    document.getElementById("body").style.color = "#333333";
-    document.getElementById("body").style.backgroundColor = "#f1f1f1";
-    document.getElementById("main").style.borderColor = "#333333";
+    document.getElementById("header").className = lightClass;
+    document.getElementById("main").className = lightClass;
+    document.getElementById("footer").className = lightClass;
+
+    document.getElementById("body").className = "light-body";
+
+    isLightTheme = true;
   }
 }

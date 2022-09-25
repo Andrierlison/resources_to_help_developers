@@ -1,3 +1,10 @@
+:root {
+  --black: #010409;
+  --white: #d9dde8;
+  --border-size: 2px;
+  --border-radius: 6px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -9,32 +16,24 @@ body {
   max-width: 96vw;
   width: 100%;
   height: 100%;
-  color: #333333;
+  background-color: var(--white);
+  color: var(--black);
   display: block;
   margin: auto;
-  background-color: #f1f1f1;
-}
-
-main {
-  max-width: 850px;
-  border: solid 2px black;
-  padding: 20px;
-  border-radius: 6px;
-  display: block;
-  margin: 10px auto;
 }
 
 h1 {
   margin: 20px 0px;
 }
 
+h2,
+h3 {
+  margin: 10px 0px;
+}
+
 summary {
   margin: 10px 0px;
   cursor: pointer;
-}
-
-h2 {
-  margin: 20px 0px;
 }
 
 ul {
@@ -48,14 +47,55 @@ ul a {
 ul a li {
   margin: 10px 10px 10px 0px;
   padding: 10px 20px;
-  background-color: #ffffff;
-  border-radius: 6px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: var(--border-radius);
 }
 
 ul a li:hover {
   opacity: 0.5;
 }
 
-ul a li {
-  color: #333333;
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+#header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-toggle-theme {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.dark-body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.light-body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.container-base {
+  border: solid 2px var(--black);
+  max-width: 850px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: block;
+  margin: 10px auto;
+}
+
+.container-light {
+  border: solid 2px var(--black);
+}
+.container-dark {
+  border: solid 2px var(--white);
 }
