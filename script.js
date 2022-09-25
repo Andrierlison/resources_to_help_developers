@@ -77,14 +77,22 @@ const linksLinuxDistros = [
 
 const linksJobs = [
   "https://www.fiverr.com/",
-  "https://vanhack.com/",
+  {
+    link: "https://vanhack.com/",
+    title: "Vanhack",
+    desc: "Consiga o emprego dos seus sonhos, no exterior e remoto",
+  },
   "https://www.linkedin.com/feed/",
   "https://programathor.com.br/",
   "https://www.linkedin.com/",
   "https://www.getninjas.com.br/",
   "https://www.freelancer.com/",
   "https://www.upwork.com/freelance-jobs/",
-  "https://www.workana.com/pt",
+  {
+    link: "https://www.workana.com/pt",
+    title: "Workana",
+    desc: "Somos a maior plataforma de trabalho freelance e remoto da América Latina, marcando tendência em nível global com uma forte presença no Sudeste Asiático. Desde 2012 revolucionamos o mundo do trabalho com nossa proposta.",
+  },
 ];
 
 const links = [
