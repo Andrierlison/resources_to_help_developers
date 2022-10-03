@@ -73,6 +73,8 @@ const linksLibs = [
   "https://redux.js.org/",
   "https://styled-components.com/",
   "https://reactnavigation.org/",
+  "https://react-native-async-storage.github.io/async-storage/",
+  "https://testing-library.com/",
   "https://sass-lang.com/",
   "https://lesscss.org/",
   "https://styled-icons.js.org/",
@@ -139,39 +141,44 @@ const linksJobs = [
   },
 ];
 
+const linksImages = [
+  "https://www.figma.com/",
+  "https://www.photopea.com/",
+  "https://www.img2go.com/",
+  "https://www.remove.bg/",
+  "https://br.pinterest.com/",
+  "https://coolbackgrounds.io/",
+  "https://simpleicons.org/",
+  "https://pt.vecteezy.com/",
+  "https://www.behance.net/",
+  "https://fonts.google.com/icons?selected=Material+Icons",
+  "https://dribbble.com/",
+  "https://undraw.co/illustrations",
+  "https://br.pinterest.com/",
+];
+
+const linksFreeAPIs = [
+  "https://rickandmortyapi.com/api/",
+  "https://exchangeratesapi.io/",
+];
+
 const links = [
   "https://graphql.org/",
   "https://docs.docker.com/",
   "https://www.docker.com/",
   "https://git-scm.com/",
   "https://html.spec.whatwg.org/multipage/",
-  "https://react-native-async-storage.github.io/async-storage/",
   "https://www.virtualbox.org/",
   "https://www.postgresql.org/",
-  "https://testing-library.com/",
-  "https://pt.vecteezy.com/",
-  "https://www.behance.net/",
   "https://caniuse.com/",
   "https://carbon.now.sh/",
-  "https://coolbackgrounds.io/",
   "https://css-tricks.com/",
-  "https://dribbble.com/",
-  "https://exchangeratesapi.io/",
   "https://freebiesbug.com/",
-  "https://rickandmortyapi.com/api/",
-  "https://fonts.google.com/icons?selected=Material+Icons",
-  "https://undraw.co/illustrations",
-  "https://www.img2go.com/",
   "https://layouts1linha.desenvolvimentoparaweb.com/",
   "https://validator.w3.org/",
-  "https://www.photopea.com/",
-  "https://br.pinterest.com/",
-  "https://www.figma.com/",
-  "https://www.remove.bg/",
   "http://www.responsinator.com/",
   "https://color.adobe.com/pt/create/color-wheel",
   "https://jigsaw.w3.org/css-validator/",
-  "https://simpleicons.org/",
   "https://www.uplabs.com/",
   "https://app.netlify.com/teams/andrierlison/sites",
   "https://coderadio.freecodecamp.org/",
@@ -205,6 +212,9 @@ document.getElementById("links-linux-distros").innerHTML =
   mountLinks(linksLinuxDistros);
 document.getElementById("links-libs").innerHTML = mountLinks(linksLibs);
 document.getElementById("links-jobs").innerHTML = mountLinks(linksJobs);
+document.getElementById("links-images").innerHTML = mountLinks(linksImages);
+document.getElementById("links-free-apis").innerHTML =
+  mountLinks(linksFreeAPIs);
 
 let isLightTheme = true;
 
