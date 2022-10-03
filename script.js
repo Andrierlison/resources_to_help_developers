@@ -89,6 +89,9 @@ const linksLinuxDistros = [
   "https://www.debian.org/",
   "https://www.gentoo.org/",
   "https://getfedora.org/en/workstation/",
+  "https://ubuntu.com/download/desktop",
+  "https://www.deepin.org/en/download/",
+  "https://manjaro.org/download/",
 ];
 
 const linksJobs = [
