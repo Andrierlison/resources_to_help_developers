@@ -180,7 +180,6 @@ const links = [
   "https://color.adobe.com/pt/create/color-wheel",
   "https://jigsaw.w3.org/css-validator/",
   "https://www.uplabs.com/",
-  "https://app.netlify.com/teams/andrierlison/sites",
   "https://coderadio.freecodecamp.org/",
   "https://github.com/",
 ];
